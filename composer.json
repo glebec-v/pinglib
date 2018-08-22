@@ -1,0 +1,15 @@
+{
+  "name": "glebec-v/pinglib",
+  "description": "massive pings using several resources",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gleb Vorotilov",
+      "email": "gvorotilov@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"GlebecV\\": "src/"}
+  }
+}
