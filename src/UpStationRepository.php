@@ -4,5 +4,5 @@ namespace GlebecV;
 
 interface UpStationRepository extends RepositoryInterface
 {
-    public function isUp(string $serialNumber): bool;
+    public function isUp(HostInterface $host): bool;
 }
