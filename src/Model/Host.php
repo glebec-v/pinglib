@@ -14,9 +14,9 @@ class Host implements HostInterface
     /**
      * StationCollection constructor.
      * @param string $ip
-     * @param string $serial
-     * @param string $name
-     * @param int    $vlan
+     * @param string|null $serial
+     * @param string|null $name
+     * @param int|null    $vlan
      */
     public function __construct(string $ip, string $serial = null, string $name = null, int $vlan = null)
     {
@@ -46,11 +46,17 @@ class Host implements HostInterface
         return $ret;
     }
 
+    /**
+     * @return string
+     */
     public function ipAddress(): string
     {
         return $this->ip;
     }
 
+    /**
+     * @return int|null
+     */
     public function vlan(): ?int
     {
         return $this->vlan;

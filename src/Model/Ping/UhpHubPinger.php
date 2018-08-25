@@ -31,12 +31,12 @@ class UhpHubPinger implements PingInterface
     {}
 
     /**
-     * @param string $sourceHost
+     * @param string|null $sourceHost
      * @param int $port
      * @param string $prompt
      * @throws UhpHubTelnetException
      */
-    public function connect(string $sourceHost, int $port = 23, string $prompt = '#'): void
+    public function connect(string $sourceHost = null, int $port = 23, string $prompt = '#'): void
     {
         $this->prompt = $prompt;
         try {
