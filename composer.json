@@ -15,7 +15,8 @@
   "require": {
     "monolog/monolog": "^1.23",
     "doctrine/dbal": "^2.8",
-    "bestnetwork/telnet": "^1.0"
+    "bestnetwork/telnet": "^1.0",
+    "league/csv": "^9.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^7"
